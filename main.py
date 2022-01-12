@@ -1,6 +1,6 @@
 import config
 import utils
-from sclib import SoundcloudAPI, Track, Playlist
+from sclib import SoundcloudAPI
 
 def main(): 
     sc_api = SoundcloudAPI()
