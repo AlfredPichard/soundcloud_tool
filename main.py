@@ -1,16 +1,17 @@
-import config
 import utils
 from sclib import SoundcloudAPI
 
 def main(): 
+    config = utils.get_config()
     sc_api = SoundcloudAPI()
-    playlist_ids = utils.prompt_to_fill(config.playlist.keys(), 'Select playlist to download: ')
+    playlist_ids = utils.prompt_to_fill(config['playlists'].keys(), 'Select playlist to download: ')
+
     already_dl_tracks = set()
     tracks_to_dl = set()
     dropped_tracks = set()
 
     for playlist_id in playlist_ids:
-        playlist_content = sc_api.resolve(config.playlist[playlist_id])
+        playlist_content = sc_api.resolve(config['playlists'][playlist_id])
         
         for track in playlist_content.tracks:
             if track.id not in already_dl_tracks:

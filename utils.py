@@ -1,6 +1,13 @@
 from urllib.request import urlopen
 import prompt_toolkit
 import re
+import configparser
+
+
+def get_config():
+    config = configparser.ConfigParser()
+    config.read('settings.ini')
+    return config
 
 
 def prompt_to_fill(options, prompt_text):
