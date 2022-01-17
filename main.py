@@ -47,7 +47,7 @@ def main():
 
         with open(config["paths"]["DL_PATH"] + "/already_downloaded.txt", "a") as f:
             for downloaded_track in downloaded_tracks:
-                f.write(downloaded_track + "\n")
+                f.write(str(downloaded_track) + "\n")
 
         print("Done !")
 
