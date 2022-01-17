@@ -20,7 +20,7 @@ def main():
         playlist_content = sc_api.resolve(config["playlists"][playlist_id])
 
         for track in playlist_content.tracks:
-            if track.id not in already_dl_tracks:
+            if str(track.id) not in already_dl_tracks:
                 tracks_to_dl.add(track)
 
         print(
