@@ -1,5 +1,5 @@
 # Soundcloud tool 2000
-Terminal app to dl souncloud playlists yeeee
+Terminal app to dl souncloud playlists in *128kpbs high resolution mega fidelity quality* yeeee
 
 
 # How to use
@@ -11,3 +11,4 @@ Terminal app to dl souncloud playlists yeeee
 
 # Notes
 Idk if this works with python <3.2
+Don't use it please buy your tracks
