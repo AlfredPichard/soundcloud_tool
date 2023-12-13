@@ -10,5 +10,5 @@ Terminal app to dl souncloud playlists in *128kpbs high resolution mega fidelity
 
 
 # Notes
-Idk if this works with python <3.2
+Idk if this works with python <3.2  
 Don't use it please buy your tracks
